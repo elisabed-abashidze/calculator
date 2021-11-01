@@ -41,7 +41,7 @@ namespace calculator
             this.btn_3 = new System.Windows.Forms.Button();
             this.btn_6 = new System.Windows.Forms.Button();
             this.btn_percent = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_1 = new System.Windows.Forms.TextBox();
             this.btn_plus = new System.Windows.Forms.Button();
             this.btn_minus = new System.Windows.Forms.Button();
             this.btn_multi = new System.Windows.Forms.Button();
@@ -58,6 +58,7 @@ namespace calculator
             this.btn_7.TabIndex = 0;
             this.btn_7.Text = "7";
             this.btn_7.UseVisualStyleBackColor = true;
+            this.btn_7.Click += new System.EventHandler(this.btn_7_Click);
             // 
             // btn_8
             // 
@@ -67,6 +68,7 @@ namespace calculator
             this.btn_8.TabIndex = 0;
             this.btn_8.Text = "8";
             this.btn_8.UseVisualStyleBackColor = true;
+            this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
             // 
             // btn_4
             // 
@@ -76,6 +78,7 @@ namespace calculator
             this.btn_4.TabIndex = 0;
             this.btn_4.Text = "4";
             this.btn_4.UseVisualStyleBackColor = true;
+            this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
             // 
             // btn_5
             // 
@@ -85,6 +88,7 @@ namespace calculator
             this.btn_5.TabIndex = 0;
             this.btn_5.Text = "5";
             this.btn_5.UseVisualStyleBackColor = true;
+            this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
             // 
             // btn_1
             // 
@@ -94,6 +98,7 @@ namespace calculator
             this.btn_1.TabIndex = 0;
             this.btn_1.Text = "1";
             this.btn_1.UseVisualStyleBackColor = true;
+            this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
             // 
             // btn_point
             // 
@@ -103,6 +108,7 @@ namespace calculator
             this.btn_point.TabIndex = 0;
             this.btn_point.Text = ".";
             this.btn_point.UseVisualStyleBackColor = true;
+            this.btn_point.Click += new System.EventHandler(this.btn_point_Click);
             // 
             // btn_2
             // 
@@ -112,6 +118,7 @@ namespace calculator
             this.btn_2.TabIndex = 0;
             this.btn_2.Text = "2";
             this.btn_2.UseVisualStyleBackColor = true;
+            this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
             // 
             // btn_0
             // 
@@ -121,6 +128,7 @@ namespace calculator
             this.btn_0.TabIndex = 0;
             this.btn_0.Text = "0";
             this.btn_0.UseVisualStyleBackColor = true;
+            this.btn_0.Click += new System.EventHandler(this.btn_0_Click);
             // 
             // btn_9
             // 
@@ -130,6 +138,7 @@ namespace calculator
             this.btn_9.TabIndex = 0;
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = true;
+            this.btn_9.Click += new System.EventHandler(this.btn_9_Click);
             // 
             // btn_3
             // 
@@ -139,6 +148,7 @@ namespace calculator
             this.btn_3.TabIndex = 0;
             this.btn_3.Text = "3";
             this.btn_3.UseVisualStyleBackColor = true;
+            this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
             // 
             // btn_6
             // 
@@ -148,6 +158,7 @@ namespace calculator
             this.btn_6.TabIndex = 0;
             this.btn_6.Text = "6";
             this.btn_6.UseVisualStyleBackColor = true;
+            this.btn_6.Click += new System.EventHandler(this.btn_6_Click);
             // 
             // btn_percent
             // 
@@ -157,14 +168,15 @@ namespace calculator
             this.btn_percent.TabIndex = 0;
             this.btn_percent.Text = "%";
             this.btn_percent.UseVisualStyleBackColor = true;
+            this.btn_percent.Click += new System.EventHandler(this.btn_percent_Click);
             // 
-            // textBox1
+            // txt_1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 41);
-            this.textBox1.TabIndex = 1;
+            this.txt_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txt_1.Location = new System.Drawing.Point(12, 12);
+            this.txt_1.Name = "txt_1";
+            this.txt_1.Size = new System.Drawing.Size(411, 41);
+            this.txt_1.TabIndex = 1;
             // 
             // btn_plus
             // 
@@ -174,6 +186,7 @@ namespace calculator
             this.btn_plus.TabIndex = 0;
             this.btn_plus.Text = "+";
             this.btn_plus.UseVisualStyleBackColor = true;
+            this.btn_plus.Click += new System.EventHandler(this.btn_plus_Click);
             // 
             // btn_minus
             // 
@@ -183,6 +196,7 @@ namespace calculator
             this.btn_minus.TabIndex = 0;
             this.btn_minus.Text = "-";
             this.btn_minus.UseVisualStyleBackColor = true;
+            this.btn_minus.Click += new System.EventHandler(this.btn_minus_Click);
             // 
             // btn_multi
             // 
@@ -192,6 +206,7 @@ namespace calculator
             this.btn_multi.TabIndex = 0;
             this.btn_multi.Text = "*";
             this.btn_multi.UseVisualStyleBackColor = true;
+            this.btn_multi.Click += new System.EventHandler(this.btn_multi_Click);
             // 
             // btn_div
             // 
@@ -201,6 +216,7 @@ namespace calculator
             this.btn_div.TabIndex = 0;
             this.btn_div.Text = "/";
             this.btn_div.UseVisualStyleBackColor = true;
+            this.btn_div.Click += new System.EventHandler(this.btn_div_Click);
             // 
             // btn_equal
             // 
@@ -210,6 +226,7 @@ namespace calculator
             this.btn_equal.TabIndex = 0;
             this.btn_equal.Text = "=";
             this.btn_equal.UseVisualStyleBackColor = true;
+            this.btn_equal.Click += new System.EventHandler(this.btn_equal_Click);
             // 
             // btn_clear
             // 
@@ -219,6 +236,7 @@ namespace calculator
             this.btn_clear.TabIndex = 0;
             this.btn_clear.Text = "C";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // Form1
             // 
@@ -226,7 +244,7 @@ namespace calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(433, 443);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_1);
             this.Controls.Add(this.btn_equal);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_div);
@@ -266,7 +284,7 @@ namespace calculator
         private System.Windows.Forms.Button btn_3;
         private System.Windows.Forms.Button btn_6;
         private System.Windows.Forms.Button btn_percent;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_1;
         private System.Windows.Forms.Button btn_plus;
         private System.Windows.Forms.Button btn_minus;
         private System.Windows.Forms.Button btn_multi;
